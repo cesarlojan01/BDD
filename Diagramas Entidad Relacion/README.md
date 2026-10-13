@@ -3,4 +3,29 @@
 ![Diagrama del sistema de biblioteca](Imagenes/biblioteca.png)
 
 # Pedidos de Restaurante
-![Diagrama del sistema de biblioteca](Imagenes/pedido_restaurante.png)
+![Diagrama del pedido de restaurante](Imagenes/pedido_restaurante.png)
+
+# Empleados
+![Diagrama de empleados](Imagenes/empleados.png)
+
+# Facturacion
+![Diagrama de un sistema de facturacion](Imagenes/facturacion.png)
+
+# Clinica Medica
+
+![Diagrama de clinica medica](Imagenes/clinica_medica.png)
+
+# Sistema de Aerolinea
+
+![Diagrama del sistema de aerolinea](Imagenes/aereolinea.png)
+
+# Discografica
+
+![Diagrama de una discografica](Imagenes/discografica.png)
+
+# Camiones
+
+![Camiones](Imagenes/camionero.png)
+
+# Veterinaria
+![Diagrama de una veterinaria](Imagenes/veterinaria.png)
