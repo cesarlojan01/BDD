@@ -23,7 +23,7 @@
 
 ![Diagrama de una discografica](Imagenes/discografica.png)
 
-# Camiones
+# Camionero
 
 ![Camiones](Imagenes/camionero.png)
 
