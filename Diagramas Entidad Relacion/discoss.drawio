@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="sq7SKke0dwYbryhUIBMF">
+    <mxGraphModel dx="1022" dy="564" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Vaipt72D-TUAkntQzcOr-1" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-2" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-3" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="disco" vertex="1">
+          <mxGeometry height="40" width="100" x="610" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-4" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="cantante" vertex="1">
+          <mxGeometry height="40" width="100" x="610" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-5" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-6" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="genero_musical" vertex="1">
+          <mxGeometry height="40" width="100" x="290" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-7" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="cancion" vertex="1">
+          <mxGeometry height="40" width="100" x="940" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-8" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-3">
+          <mxGeometry relative="1" x="0.017" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="titulo" vertex="1">
+          <mxGeometry height="40" width="100" x="535" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-10" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="precio" vertex="1">
+          <mxGeometry height="40" width="100" x="665" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-12" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-6" value="">
+          <mxGeometry relative="1" x="0.6667" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" value="id_genero" vertex="1">
+          <mxGeometry height="40" width="100" x="290" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-14" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="nombre" vertex="1">
+          <mxGeometry height="40" width="100" x="470" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-16" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="pais" vertex="1">
+          <mxGeometry height="40" width="100" x="600" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-18" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" value="id_cancion" vertex="1">
+          <mxGeometry height="40" width="100" x="930" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-20" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;align=center;" value="titulo" vertex="1">
+          <mxGeometry height="40" width="100" x="1070" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-22" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-23" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="pertenece" vertex="1">
+          <mxGeometry height="60" width="120" x="600" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-24" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-25" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="tiene" vertex="1">
+          <mxGeometry height="60" width="120" x="765" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-26" edge="1" parent="1" source="Vaipt72D-TUAkntQzcOr-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="Vaipt72D-TUAkntQzcOr-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-27" parent="1" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" value="tiene" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1:N" vertex="1">
+          <mxGeometry height="30" width="60" x="720" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="N:M" vertex="1">
+          <mxGeometry height="30" width="60" x="790" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="Vaipt72D-TUAkntQzcOr-30" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1:1" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
