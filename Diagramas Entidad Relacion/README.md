@@ -19,6 +19,14 @@
 
 ![Diagrama del sistema de aerolinea](Imagenes/aereolinea.png)
 
+# Tienda Informatica 
+
+![Diagrama de una tienda informatica](Imagenes/tienda_Informatica.png)
+
+# Discos Musicales 
+
+![Diagrama de discos musicales](Imagenes/discos_musicales.png)
+
 # Discografica
 
 ![Diagrama de una discografica](Imagenes/discografica.png)
