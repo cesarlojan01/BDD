@@ -1,0 +1,316 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="rel_taurus_final" name="Modelo relacional corregido">
+    <mxGraphModel dx="2794" dy="1456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1530" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tbl_finca" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="FINCA" vertex="1">
+          <mxGeometry height="204" width="300" x="65" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_finca_r0" parent="tbl_finca" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_finca" vertex="1">
+          <mxGeometry height="27" width="300" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_finca_r1" parent="tbl_finca" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         nombre" vertex="1">
+          <mxGeometry height="27" width="300" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_finca_r2" parent="tbl_finca" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         ubicacion" vertex="1">
+          <mxGeometry height="27" width="300" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_finca_r3" parent="tbl_finca" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         area_total" vertex="1">
+          <mxGeometry height="27" width="300" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_finca_r4" parent="tbl_finca" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         tipo_finca" vertex="1">
+          <mxGeometry height="27" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_finca_r5" parent="tbl_finca" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         responsable" vertex="1">
+          <mxGeometry height="27" width="300" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="POTRERO" vertex="1">
+          <mxGeometry height="204" width="300" x="65" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero_r0" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_potrero" vertex="1">
+          <mxGeometry height="27" width="300" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero_r1" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_finca" vertex="1">
+          <mxGeometry height="27" width="300" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero_r2" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         nombre" vertex="1">
+          <mxGeometry height="27" width="300" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero_r3" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         area_hectareas" vertex="1">
+          <mxGeometry height="27" width="300" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero_r4" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         tipo_pasto" vertex="1">
+          <mxGeometry height="27" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_potrero_r5" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         estado" vertex="1">
+          <mxGeometry height="27" width="300" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ALIMENTACION" vertex="1">
+          <mxGeometry height="258" width="300" x="65" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r0" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_alimentacion" vertex="1">
+          <mxGeometry height="27" width="300" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r1" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_potrero" vertex="1">
+          <mxGeometry height="27" width="300" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r2" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha" vertex="1">
+          <mxGeometry height="27" width="300" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r3" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         tipo_alimento" vertex="1">
+          <mxGeometry height="27" width="300" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r4" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         cantidad" vertex="1">
+          <mxGeometry height="27" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r5" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         unidad_medida" vertex="1">
+          <mxGeometry height="27" width="300" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r6" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         costo" vertex="1">
+          <mxGeometry height="27" width="300" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r7" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         observacion" vertex="1">
+          <mxGeometry height="27" width="300" y="231" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_lote_ganado" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="LOTE_GANADO" vertex="1">
+          <mxGeometry height="177" width="310" x="490" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_lote_ganado_r0" parent="tbl_lote_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_lote" vertex="1">
+          <mxGeometry height="27" width="310" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_lote_ganado_r1" parent="tbl_lote_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         nombre_lote" vertex="1">
+          <mxGeometry height="27" width="310" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_lote_ganado_r2" parent="tbl_lote_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha_formacion" vertex="1">
+          <mxGeometry height="27" width="310" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_lote_ganado_r3" parent="tbl_lote_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         objetivo_engorde" vertex="1">
+          <mxGeometry height="27" width="310" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_lote_ganado_r4" parent="tbl_lote_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         estado" vertex="1">
+          <mxGeometry height="27" width="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ANIMAL" vertex="1">
+          <mxGeometry height="339" width="310" x="490" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r0" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_animal" vertex="1">
+          <mxGeometry height="27" width="310" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r1" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_lote" vertex="1">
+          <mxGeometry height="27" width="310" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r2" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK ?  id_compra" vertex="1">
+          <mxGeometry height="27" width="310" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r3" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="UQ  arete" vertex="1">
+          <mxGeometry height="27" width="310" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r4" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         raza" vertex="1">
+          <mxGeometry height="27" width="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r5" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         sexo" vertex="1">
+          <mxGeometry height="27" width="310" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r6" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha_nacimiento" vertex="1">
+          <mxGeometry height="27" width="310" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r7" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha_ingreso" vertex="1">
+          <mxGeometry height="27" width="310" y="231" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r8" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         estado" vertex="1">
+          <mxGeometry height="27" width="310" y="258" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r9" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="fecha_baja" vertex="1">
+          <mxGeometry height="27" width="310" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_animal_r10" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="motivo_baja" vertex="1">
+          <mxGeometry height="27" width="310" y="312" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ESTANCIA" vertex="1">
+          <mxGeometry height="204" width="310" x="490" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia_r0" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_estancia" vertex="1">
+          <mxGeometry height="27" width="310" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia_r1" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_animal" vertex="1">
+          <mxGeometry height="27" width="310" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia_r2" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_potrero" vertex="1">
+          <mxGeometry height="27" width="310" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia_r3" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha_entrada" vertex="1">
+          <mxGeometry height="27" width="310" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia_r4" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="fecha_salida" vertex="1">
+          <mxGeometry height="27" width="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_estancia_r5" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         motivo" vertex="1">
+          <mxGeometry height="27" width="310" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="COMPRA_GANADO" vertex="1">
+          <mxGeometry height="204" width="315" x="960" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado_r0" parent="tbl_compra_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_compra" vertex="1">
+          <mxGeometry height="27" width="315" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado_r1" parent="tbl_compra_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha_compra" vertex="1">
+          <mxGeometry height="27" width="315" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado_r2" parent="tbl_compra_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         proveedor" vertex="1">
+          <mxGeometry height="27" width="315" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado_r3" parent="tbl_compra_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         cantidad" vertex="1">
+          <mxGeometry height="27" width="315" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado_r4" parent="tbl_compra_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         costo_total" vertex="1">
+          <mxGeometry height="27" width="315" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_compra_ganado_r5" parent="tbl_compra_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         documento" vertex="1">
+          <mxGeometry height="27" width="315" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pesaje" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="PESAJE" vertex="1">
+          <mxGeometry height="177" width="300" x="935" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pesaje_r0" parent="tbl_pesaje" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_pesaje" vertex="1">
+          <mxGeometry height="27" width="300" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pesaje_r1" parent="tbl_pesaje" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_animal" vertex="1">
+          <mxGeometry height="27" width="300" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pesaje_r2" parent="tbl_pesaje" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha" vertex="1">
+          <mxGeometry height="27" width="300" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pesaje_r3" parent="tbl_pesaje" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         peso_kg" vertex="1">
+          <mxGeometry height="27" width="300" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_pesaje_r4" parent="tbl_pesaje" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         observacion" vertex="1">
+          <mxGeometry height="27" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="CONTROL_SANITARIO" vertex="1">
+          <mxGeometry height="285" width="340" x="1320" y="874" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r0" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_control" vertex="1">
+          <mxGeometry height="27" width="340" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r1" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK  id_animal" vertex="1">
+          <mxGeometry height="27" width="340" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r2" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha" vertex="1">
+          <mxGeometry height="27" width="340" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r3" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         tipo_tratamiento" vertex="1">
+          <mxGeometry height="27" width="340" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r4" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         medicamento" vertex="1">
+          <mxGeometry height="27" width="340" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r5" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         dosis" vertex="1">
+          <mxGeometry height="27" width="340" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r6" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         costo" vertex="1">
+          <mxGeometry height="27" width="340" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_control_sanitario_r7" parent="tbl_control_sanitario" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         responsable" vertex="1">
+          <mxGeometry height="27" width="340" y="231" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="VENTA" vertex="1">
+          <mxGeometry height="150" width="340" x="1510" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_r0" parent="tbl_venta" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_venta" vertex="1">
+          <mxGeometry height="27" width="340" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_r1" parent="tbl_venta" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha_venta" vertex="1">
+          <mxGeometry height="27" width="340" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_r2" parent="tbl_venta" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         comprador" vertex="1">
+          <mxGeometry height="27" width="340" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_r3" parent="tbl_venta" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         importe_total" vertex="1">
+          <mxGeometry height="27" width="340" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="VENTA_DETALLE" vertex="1">
+          <mxGeometry height="204" width="310" x="1080" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle_r0" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK · FK  id_venta" vertex="1">
+          <mxGeometry height="27" width="310" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle_r1" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  nro_linea" vertex="1">
+          <mxGeometry height="27" width="310" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle_r2" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK · UQ  id_animal" vertex="1">
+          <mxGeometry height="27" width="310" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle_r3" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         peso_venta_kg" vertex="1">
+          <mxGeometry height="27" width="310" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle_r4" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         precio_kg" vertex="1">
+          <mxGeometry height="27" width="310" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_venta_detalle_r5" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         subtotal" vertex="1">
+          <mxGeometry height="27" width="310" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-2" edge="1" parent="1" source="tbl_animal_r1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="tbl_lote_ganado_r0" value="">
+          <mxGeometry height="100" relative="1" width="100" x="-0.0204" as="geometry">
+            <mxPoint x="810" y="569.75" as="sourcePoint" />
+            <mxPoint x="810" y="175.5000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-3" edge="1" parent="1" source="tbl_potrero_r0" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="tbl_finca_r0" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="30" y="637" as="sourcePoint" />
+            <mxPoint x="30" y="243" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-4" edge="1" parent="1" source="tbl_alimentacion_r1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="tbl_potrero_r1" value="">
+          <mxGeometry height="100" relative="1" width="100" x="0.1597" as="geometry">
+            <mxPoint x="410" y="1153" as="sourcePoint" />
+            <mxPoint x="410" y="653.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-5" edge="1" parent="1" source="tbl_estancia_r2" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="tbl_potrero_r1" value="">
+          <mxGeometry height="100" relative="1" width="100" x="0.1597" as="geometry">
+            <mxPoint x="390" y="1413" as="sourcePoint" />
+            <mxPoint x="360" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-6" edge="1" parent="1" source="tbl_estancia_r1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;entryX=-0.01;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" target="tbl_animal_r0" value=" ">
+          <mxGeometry height="100" relative="1" width="100" x="0.1597" as="geometry">
+            <mxPoint x="685" y="1510" as="sourcePoint" />
+            <mxPoint x="470" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-8" edge="1" parent="1" source="tbl_animal_r0" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="tbl_compra_ganado" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="870" y="450" as="sourcePoint" />
+            <mxPoint x="970" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-9" edge="1" parent="1" source="tbl_pesaje_r1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="tbl_animal_r0" value=" ">
+          <mxGeometry height="100" relative="1" width="100" x="0.1597" as="geometry">
+            <mxPoint x="883" y="1288" as="sourcePoint" />
+            <mxPoint x="880" y="653" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-10" edge="1" parent="1" source="tbl_animal_r0" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="tbl_venta_detalle_r2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="900" y="750" as="sourcePoint" />
+            <mxPoint x="1000" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-12" edge="1" parent="1" source="tbl_venta_r0" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERone;endFill=1;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="tbl_venta_detalle_r0" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="1470" y="700" as="sourcePoint" />
+            <mxPoint x="1570" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7r7a3NjB4xj4W3fuz9MG-13" edge="1" parent="1" source="tbl_control_sanitario_r1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="tbl_animal_r0" value=" ">
+          <mxGeometry height="100" relative="1" width="100" x="0.1597" as="geometry">
+            <mxPoint x="1005" y="1502" as="sourcePoint" />
+            <mxPoint x="870" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
