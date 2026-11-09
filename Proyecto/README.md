@@ -19,18 +19,3 @@ Muestra las tablas, sus atributos y las relaciones mediante claves primarias (PK
 
 **[Ver imagen en tamaño completo](modelo_r.svg)** · **[Abrir archivo XML de draw.io](Modelo%20Relacional.xml)**
 
-
-
-## Organización del proyecto
-
-```text
-.
-├── SQL/                              # Scripts SQL del proyecto
-├── Modelo Entidad Relacion.drawio      # Diagrama conceptual editable
-├── Modelo Relacional.xml              # Diagrama relacional editable
-├── docs/
-│   └── diagramas/
-│       ├── entidad-relacion.svg        # Vista previa del modelo E-R
-│       └── modelo-relacional.svg       # Vista previa del modelo relacional
-└── README.md
-```
