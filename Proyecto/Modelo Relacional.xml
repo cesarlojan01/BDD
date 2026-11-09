@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="ChatGPT">
   <diagram id="rel_taurus_final" name="Modelo relacional corregido">
-    <mxGraphModel dx="2794" dy="1456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1530" math="0" shadow="0">
+    <mxGraphModel dx="3193" dy="1664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1530" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -26,7 +26,7 @@
           <mxGeometry height="27" width="300" y="177" as="geometry" />
         </mxCell>
         <mxCell id="tbl_potrero" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="POTRERO" vertex="1">
-          <mxGeometry height="204" width="300" x="65" y="550" as="geometry" />
+          <mxGeometry height="204" width="300" x="50" y="505" as="geometry" />
         </mxCell>
         <mxCell id="tbl_potrero_r0" parent="tbl_potrero" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_potrero" vertex="1">
           <mxGeometry height="27" width="300" y="42" as="geometry" />
@@ -47,7 +47,7 @@
           <mxGeometry height="27" width="300" y="177" as="geometry" />
         </mxCell>
         <mxCell id="tbl_alimentacion" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ALIMENTACION" vertex="1">
-          <mxGeometry height="258" width="300" x="65" y="1050" as="geometry" />
+          <mxGeometry height="258" width="300" x="50" y="887.5" as="geometry" />
         </mxCell>
         <mxCell id="tbl_alimentacion_r0" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_alimentacion" vertex="1">
           <mxGeometry height="27" width="300" y="42" as="geometry" />
@@ -74,7 +74,7 @@
           <mxGeometry height="27" width="300" y="231" as="geometry" />
         </mxCell>
         <mxCell id="tbl_lote_ganado" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="LOTE_GANADO" vertex="1">
-          <mxGeometry height="177" width="310" x="490" y="120" as="geometry" />
+          <mxGeometry height="177" width="310" x="420" y="120" as="geometry" />
         </mxCell>
         <mxCell id="tbl_lote_ganado_r0" parent="tbl_lote_ganado" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_lote" vertex="1">
           <mxGeometry height="27" width="310" y="42" as="geometry" />
@@ -92,7 +92,7 @@
           <mxGeometry height="27" width="310" y="150" as="geometry" />
         </mxCell>
         <mxCell id="tbl_animal" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ANIMAL" vertex="1">
-          <mxGeometry height="339" width="310" x="490" y="485" as="geometry" />
+          <mxGeometry height="339" width="310" x="480" y="463" as="geometry" />
         </mxCell>
         <mxCell id="tbl_animal_r0" parent="tbl_animal" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_animal" vertex="1">
           <mxGeometry height="27" width="310" y="42" as="geometry" />
@@ -128,7 +128,7 @@
           <mxGeometry height="27" width="310" y="312" as="geometry" />
         </mxCell>
         <mxCell id="tbl_estancia" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ESTANCIA" vertex="1">
-          <mxGeometry height="204" width="310" x="490" y="1090" as="geometry" />
+          <mxGeometry height="204" width="310" x="470" y="860.5" as="geometry" />
         </mxCell>
         <mxCell id="tbl_estancia_r0" parent="tbl_estancia" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_estancia" vertex="1">
           <mxGeometry height="27" width="310" y="42" as="geometry" />
@@ -170,7 +170,7 @@
           <mxGeometry height="27" width="315" y="177" as="geometry" />
         </mxCell>
         <mxCell id="tbl_pesaje" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="PESAJE" vertex="1">
-          <mxGeometry height="177" width="300" x="935" y="1090" as="geometry" />
+          <mxGeometry height="177" width="300" x="890" y="854.5" as="geometry" />
         </mxCell>
         <mxCell id="tbl_pesaje_r0" parent="tbl_pesaje" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_pesaje" vertex="1">
           <mxGeometry height="27" width="300" y="42" as="geometry" />
@@ -275,7 +275,8 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="7r7a3NjB4xj4W3fuz9MG-6" edge="1" parent="1" source="tbl_estancia_r1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;defaultLabelBackgroundColor=page;entryX=-0.01;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" target="tbl_animal_r0" value=" ">
-          <mxGeometry height="100" relative="1" width="100" x="0.1597" as="geometry">
+          <mxGeometry height="100" relative="1" width="100" x="-0.0757" y="63" as="geometry">
+            <mxPoint x="-30" y="8" as="offset" />
             <mxPoint x="685" y="1510" as="sourcePoint" />
             <mxPoint x="470" y="640" as="targetPoint" />
           </mxGeometry>
