@@ -1,6 +1,7 @@
 use ganado ;
-SELECT l.id_lote, l.nombre_lote, COUNT(DISTINCT a.raza) AS razas
-FROM   LOTE_GANADO l
-JOIN   ANIMAL a ON a.id_lote = l.id_lote
-GROUP  BY l.id_lote, l.nombre_lote
-HAVING COUNT(DISTINCT a.raza) = (SELECT COUNT(DISTINCT raza) FROM ANIMAL);
+SELECT a.arete, a.raza, p.nombre AS potrero, p.tipo_pasto, e.fecha_entrada 
+FROM animal a 
+JOIN estancia e ON a.id_animal = e.id_animal 
+JOIN potrero p ON e.id_potrero = p.id_potrero 
+JOIN finca f ON p.id_finca = f.id_finca 
+WHERE a.estado = 'ACTIVO' AND e.fecha_salida IS NULL AND f.nombre = 'Finca Engorde';
