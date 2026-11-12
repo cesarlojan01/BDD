@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS VENTA_DETALLE;
 DROP TABLE IF EXISTS VENTA;
 DROP TABLE IF EXISTS CONTROL_SANITARIO;
@@ -177,12 +176,11 @@ CREATE TABLE VENTA (
 
 CREATE TABLE VENTA_DETALLE (
     id_venta       INT           NOT NULL,
-    nro_linea      INT           NOT NULL,
     id_animal      INT           NOT NULL,
     peso_venta_kg  DECIMAL(7,2)  NOT NULL,
     precio_kg      DECIMAL(8,2)  NOT NULL,
     sub_total      DECIMAL(12,2) NOT NULL,
-    PRIMARY KEY (id_venta, nro_linea),
+    PRIMARY KEY (id_venta, id_animal),
 
     CONSTRAINT uq_detalle_animal UNIQUE (id_animal),
     CONSTRAINT ck_detalle_peso   CHECK (peso_venta_kg > 0),
@@ -388,7 +386,7 @@ INSERT INTO PESAJE (id_animal, fecha, peso_kg, observacion) VALUES
     (20, '2026-09-10',   372.0, 'Peso de ingreso'),
     (20, '2026-11-02',  390.55, 'Pesaje de venta');
 
--- ALIMENTACION
+
 INSERT INTO ALIMENTACION (id_potrero, fecha, tipo_alimento,
                           cantidad_kg, costo, observacion) VALUES
     (4, '2026-05-03', 'Sal mineralizada'  ,   25.0,  21.25, 'Suplemento'),
@@ -414,26 +412,23 @@ INSERT INTO CONTROL_SANITARIO (id_animal, fecha, tipo_tratamiento,
 
 
 INSERT INTO VENTA (fecha_venta, comprador, importe_total) VALUES
-    ('2026-04-15', 'Comerciante Pedro Zambrano'  ,   757.47),
+    ('2026-04-15', 'Comerciante Pedro Zambrano'  ,   757.48),
     ('2026-06-28', 'Frigorifico El Buen Corte'   ,   940.09),
     ('2026-10-20', 'Comerciante Pedro Zambrano'  ,  2290.79),
     ('2026-11-02', 'Frigorifico El Buen Corte'   ,  1788.49);
 
--- VENTA_DETALLE
-INSERT INTO VENTA_DETALLE (id_venta, nro_linea, id_animal,
+
+INSERT INTO VENTA_DETALLE (id_venta, id_animal,
                            peso_venta_kg, precio_kg, sub_total) VALUES
-    (1, 1,  7,   369.5, 2.05,   757.47),
-    (2, 1,  8,  437.25, 2.15,   940.09),
-    (3, 1, 13,   369.5, 2.1,   775.95),
-    (3, 2, 10,  321.95, 2.1,    676.1),
-    (3, 3, 15,   399.4, 2.1,   838.74),
-    (4, 1, 19,   422.4, 2.2,   929.28),
-    (4, 2, 20,  390.55, 2.2,   859.21);
+    (1,  7,   369.5, 2.05,   757.48),
+    (2,  8,  437.25, 2.15,   940.09),
+    (3, 13,   369.5, 2.1,   775.95),
+    (3, 10,  321.95, 2.1,    676.1),
+    (3, 15,   399.4, 2.1,   838.74),
+    (4, 19,   422.4, 2.2,   929.28),
+    (4, 20,  390.55, 2.2,   859.21);
 
 
--- =====================================================================
---  VERIFICACION RAPIDA
--- =====================================================================
 SELECT 'FINCA' AS tabla, COUNT(*) AS registros FROM FINCA
 UNION ALL SELECT 'POTRERO',           COUNT(*) FROM POTRERO
 UNION ALL SELECT 'COMPRA_GANADO',     COUNT(*) FROM COMPRA_GANADO
