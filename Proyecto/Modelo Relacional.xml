@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="ChatGPT">
   <diagram id="rel_taurus_final" name="Modelo relacional corregido">
-    <mxGraphModel dx="894" dy="466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1530" math="0" shadow="0">
+    <mxGraphModel dx="745" dy="388" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1850" pageHeight="1530" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -44,7 +44,7 @@
           <mxGeometry height="27" width="300" y="177" as="geometry" />
         </mxCell>
         <mxCell id="tbl_alimentacion" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="ALIMENTACION" vertex="1">
-          <mxGeometry height="252.5" width="300" x="50" y="887.5" as="geometry" />
+          <mxGeometry height="242.5" width="300" x="50" y="887.5" as="geometry" />
         </mxCell>
         <mxCell id="tbl_alimentacion_r0" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK  id_alimentacion" vertex="1">
           <mxGeometry height="27" width="300" y="42" as="geometry" />
@@ -55,17 +55,17 @@
         <mxCell id="tbl_alimentacion_r2" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         fecha" vertex="1">
           <mxGeometry height="27" width="300" y="96" as="geometry" />
         </mxCell>
-        <mxCell id="tbl_alimentacion_r3" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         tipo_alimento" vertex="1">
-          <mxGeometry height="27" width="300" y="123" as="geometry" />
-        </mxCell>
         <mxCell id="tbl_alimentacion_r4" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         cantidad_kg" vertex="1">
           <mxGeometry height="27" width="300" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="tbl_alimentacion_r6" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         costo" vertex="1">
-          <mxGeometry height="27" width="300" y="209.5" as="geometry" />
-        </mxCell>
         <mxCell id="tbl_alimentacion_r7" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         observacion" vertex="1">
-          <mxGeometry height="27" width="300" y="182.5" as="geometry" />
+          <mxGeometry height="27" width="300" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r3" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         tipo_alimento" vertex="1">
+          <mxGeometry height="27" width="300" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="tbl_alimentacion_r6" parent="tbl_alimentacion" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         costo" vertex="1">
+          <mxGeometry height="27" width="300" y="202.5" as="geometry" />
         </mxCell>
         <mxCell id="tbl_lote_ganado" parent="1" style="swimlane;html=1;container=1;collapsible=0;whiteSpace=wrap;horizontal=1;startSize=42;rounded=0;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=14;swimlaneFillColor=#FFFFFF;strokeWidth=1.5;shadow=0;resizeParent=0;textShadow=0;" value="LOTE_GANADO" vertex="1">
           <mxGeometry height="177" width="310" x="420" y="120" as="geometry" />
@@ -229,7 +229,7 @@
         <mxCell id="tbl_venta_detalle_r0" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK · FK  id_venta" vertex="1">
           <mxGeometry height="27" width="310" y="42" as="geometry" />
         </mxCell>
-        <mxCell id="tbl_venta_detalle_r2" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="FK · UQ  id_animal" vertex="1">
+        <mxCell id="tbl_venta_detalle_r2" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=1;strokeWidth=0.5;textShadow=0;" value="PK ·&amp;nbsp;FK · UQ  id_animal" vertex="1">
           <mxGeometry height="27" width="310" y="75" as="geometry" />
         </mxCell>
         <mxCell id="tbl_venta_detalle_r3" parent="tbl_venta_detalle" style="text;html=1;whiteSpace=wrap;overflow=hidden;align=left;verticalAlign=middle;spacingLeft=13;fontFamily=Helvetica;fontSize=12;fontStyle=0;strokeWidth=0.5;textShadow=0;" value="         peso_venta_kg" vertex="1">
