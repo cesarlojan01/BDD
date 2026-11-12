@@ -386,7 +386,7 @@ INSERT INTO PESAJE (id_animal, fecha, peso_kg, observacion) VALUES
     (20, '2026-09-10',   372.0, 'Peso de ingreso'),
     (20, '2026-11-02',  390.55, 'Pesaje de venta');
 
-
+-- ALIMENTACION
 INSERT INTO ALIMENTACION (id_potrero, fecha, tipo_alimento,
                           cantidad_kg, costo, observacion) VALUES
     (4, '2026-05-03', 'Sal mineralizada'  ,   25.0,  21.25, 'Suplemento'),
@@ -417,7 +417,7 @@ INSERT INTO VENTA (fecha_venta, comprador, importe_total) VALUES
     ('2026-10-20', 'Comerciante Pedro Zambrano'  ,  2290.79),
     ('2026-11-02', 'Frigorifico El Buen Corte'   ,  1788.49);
 
-
+-- VENTA_DETALLE
 INSERT INTO VENTA_DETALLE (id_venta, id_animal,
                            peso_venta_kg, precio_kg, sub_total) VALUES
     (1,  7,   369.5, 2.05,   757.48),
@@ -429,6 +429,9 @@ INSERT INTO VENTA_DETALLE (id_venta, id_animal,
     (4, 20,  390.55, 2.2,   859.21);
 
 
+-- =====================================================================
+--  VERIFICACION RAPIDA
+-- =====================================================================
 SELECT 'FINCA' AS tabla, COUNT(*) AS registros FROM FINCA
 UNION ALL SELECT 'POTRERO',           COUNT(*) FROM POTRERO
 UNION ALL SELECT 'COMPRA_GANADO',     COUNT(*) FROM COMPRA_GANADO
