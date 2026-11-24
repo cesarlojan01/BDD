@@ -1,4 +1,9 @@
 use ganado;
-SELECT c.documento, c.proveedor, c.fecha_compra, COUNT(a.id_animal) AS animales, ROUND(c.costo_total / COUNT(a.id_animal), 2) AS costo_por_animal, SUM(CASE WHEN a.estado = 'ACTIVO' THEN 1 ELSE 0 END) AS activos, SUM(CASE WHEN a.estado = 'VENDIDO' THEN 1 ELSE 0 END) AS vendidos
- FROM COMPRA_GANADO c JOIN ANIMAL a ON a.id_compra = c.id_compra JOIN LOTE_GANADO l ON l.id_lote = a.id_lote 
- GROUP BY c.id_compra, c.documento, c.proveedor, c.fecha_compra, c.costo_total HAVING COUNT(a.id_animal) >= 2 ORDER BY costo_por_animal DESC;
+SELECT   v.comprador,
+         COUNT(d.id_animal)          AS animales,
+         ROUND(SUM(d.peso_venta_kg), 2) AS kg_vendidos,
+         ROUND(AVG(d.precio_kg), 2)  AS precio_promedio_kg,
+         ROUND(SUM(d.sub_total), 2)  AS ingreso_total
+FROM     venta v
+JOIN     venta_detalle d ON v.id_venta = d.id_venta
+GROUP BY v.comprador;
