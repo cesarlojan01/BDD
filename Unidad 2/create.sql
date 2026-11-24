@@ -1,4 +1,3 @@
-use gad_db;
 
 CREATE TABLE
     IF NOT EXISTS provincias (
