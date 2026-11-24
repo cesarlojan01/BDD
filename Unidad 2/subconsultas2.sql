@@ -1,50 +1,37 @@
-SELECT id_organizacion, nombre, siglas
-FROM organizaciones_politicas
-WHERE id_organizacion IN (
-    SELECT id_organizacion
-    FROM candidatos
-);  
 
-SELECT o.id_organizacion, o.nombre, o.siglas
-FROM organizaciones_politicas o
+-- 5. Organizaciones con candidatos inscritos (IN)
+SELECT nombre, siglas
+FROM organizaciones
+WHERE id_organizacion IN (
+    SELECT DISTINCT id_organizacion
+    FROM candidatos
+);
+
+-- 6. Organizaciones sin candidatos (NOT EXISTS)
+SELECT o.nombre, o.siglas
+FROM organizaciones o
 WHERE NOT EXISTS (
     SELECT 1
     FROM candidatos c
     WHERE c.id_organizacion = o.id_organizacion
 );
 
-SELECT c.nombres, c.apellidos, r.votos
-FROM candidatos c
-JOIN resultados r ON r.id_candidato = c.id_candidato
-WHERE r.votos > ALL (
-    SELECT r2.votos
-    FROM resultados r2
-    WHERE r2.id_candidato IN (
-        SELECT id_candidato
-        FROM candidatos
-        WHERE id_canton = (
-            SELECT id_canton
-            FROM cantones
-            WHERE nombre = 'Loja'
-        )
-    )
-)
-ORDER BY r.votos DESC;
+-- 7. Candidatos con votación superior a todos los candidatos de Loja (ALL)
+SELECT nombres, apellidos, votos
+FROM candidatos
+WHERE votos > ALL (
+    SELECT c.votos
+    FROM candidatos c
+             INNER JOIN cantones ca ON c.id_canton = ca.id_canton
+    WHERE ca.nombre = 'Loja'
+);
 
-SELECT c.nombres, c.apellidos, r.votos
-FROM candidatos c
-JOIN resultados r ON r.id_candidato = c.id_candidato
-WHERE r.votos > ANY (
-    SELECT r2.votos
-    FROM resultados r2
-    WHERE r2.id_candidato IN (
-        SELECT id_candidato
-        FROM candidatos
-        WHERE id_canton = (
-            SELECT id_canton
-            FROM cantones
-            WHERE nombre = 'Catamayo'
-        )
-    )
-)
-ORDER BY r.votos DESC;
+-- 8. Candidatos con votación superior a algún candidato de Catamayo (ANY)
+SELECT nombres, apellidos, votos
+FROM candidatos
+WHERE votos > ANY (
+    SELECT c.votos
+    FROM candidatos c
+             INNER JOIN cantones ca ON c.id_canton = ca.id_canton
+    WHERE ca.nombre = 'Catamayo'
+);

@@ -1,12 +1,15 @@
+
+-- 1. Candidatos del Movimiento Renovación Ciudadana
 SELECT nombres, apellidos
 FROM candidatos
 WHERE id_organizacion = (
     SELECT id_organizacion
-    FROM organizaciones_politicas
+    FROM organizaciones
     WHERE nombre = 'Movimiento Renovación Ciudadana'
 );
 
-SELECT id_candidato, nombres, apellidos
+-- 2. Candidatos para la dignidad de Alcalde
+SELECT nombres, apellidos
 FROM candidatos
 WHERE id_dignidad = (
     SELECT id_dignidad
@@ -14,7 +17,8 @@ WHERE id_dignidad = (
     WHERE nombre = 'Alcalde'
 );
 
-SELECT id_candidato, nombres, apellidos
+-- 3. Candidatos de la provincia de Loja
+SELECT nombres, apellidos
 FROM candidatos
 WHERE id_canton IN (
     SELECT id_canton
@@ -24,13 +28,12 @@ WHERE id_canton IN (
         FROM provincias
         WHERE nombre = 'Loja'
     )
-);  
+);
 
-SELECT c.nombres, c.apellidos, r.votos
-FROM candidatos c
-JOIN resultados r ON r.id_candidato = c.id_candidato
-WHERE r.votos > (
+-- 4. Candidatos con votación superior al promedio general
+SELECT nombres, apellidos, votos
+FROM candidatos
+WHERE votos > (
     SELECT AVG(votos)
-    FROM resultados
-)
-ORDER BY r.votos DESC;
+    FROM candidatos
+);

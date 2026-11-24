@@ -1,46 +1,39 @@
-SELECT c.nombres, c.apellidos,
-       (SELECT d.nombre FROM dignidades d WHERE d.id_dignidad = c.id_dignidad) AS dignidad,
-       r.votos
-FROM candidatos c
-JOIN resultados r ON r.id_candidato = c.id_candidato
-WHERE r.votos > (
-    SELECT AVG(r2.votos)
-    FROM resultados r2
-    JOIN candidatos c2 ON c2.id_candidato = r2.id_candidato
-    WHERE c2.id_dignidad = c.id_dignidad
-)
-ORDER BY dignidad, r.votos DESC;
 
-SELECT (SELECT ca.nombre FROM cantones ca WHERE ca.id_canton = c.id_canton) AS canton,
-       c.nombres, c.apellidos, r.votos
-FROM candidatos c
-JOIN resultados r ON r.id_candidato = c.id_candidato
-WHERE r.votos = (
-    SELECT MAX(r2.votos)
-    FROM resultados r2
-    JOIN candidatos c2 ON c2.id_candidato = r2.id_candidato
-    WHERE c2.id_canton = c.id_canton
-)
-ORDER BY canton;
+-- 9. Candidatos con votación superior al promedio de su dignidad
+SELECT c1.nombres, c1.apellidos, c1.votos
+FROM candidatos c1
+WHERE c1.votos > (
+    SELECT AVG(c2.votos)
+    FROM candidatos c2
+    WHERE c2.id_dignidad = c1.id_dignidad
+);
 
+-- 10. Candidato con mayor votación por cantón
+SELECT c1.nombres, c1.apellidos, c1.votos, c1.id_canton
+FROM candidatos c1
+WHERE c1.votos = (
+    SELECT MAX(c2.votos)
+    FROM candidatos c2
+    WHERE c2.id_canton = c1.id_canton
+);
 
-SELECT o.nombre, o.siglas,
-       (SELECT COUNT(*) FROM candidatos c WHERE c.id_organizacion = o.id_organizacion) AS total_candidatos
-FROM organizaciones_politicas o
-WHERE (
-    SELECT COUNT(*)
-    FROM candidatos c
-    WHERE c.id_organizacion = o.id_organizacion
-) > (
-    SELECT COUNT(*) * 1.0 / (SELECT COUNT(*) FROM organizaciones_politicas)
-    FROM candidatos
-)
-ORDER BY total_candidatos DESC;
+-- 11. Organizaciones con más candidatos que el promedio
+SELECT id_organizacion, COUNT(*) AS total_candidatos
+FROM candidatos
+GROUP BY id_organizacion
+HAVING COUNT(*) > (
+    SELECT AVG(conteo)
+    FROM (
+             SELECT COUNT(*) AS conteo
+             FROM candidatos
+             GROUP BY id_organizacion
+         ) AS subconsulta
+);
 
-SELECT c.id_candidato, c.nombres, c.apellidos
-FROM candidatos c
-WHERE NOT EXISTS (
-    SELECT 1
-    FROM resultados r
-    WHERE r.id_candidato = c.id_candidato
+-- 12. Candidatos sin resultados electorales
+SELECT nombres, apellidos
+FROM candidatos
+WHERE id_candidato NOT IN (
+    SELECT id_candidato
+    FROM resultados
 );

@@ -1,18 +1,17 @@
-CREATE OR REPLACE VIEW vw_candidatos AS
+USE elecciones;
+
+CREATE VIEW Vw_candidatos AS
 SELECT
     c.id_candidato,
     c.nombres,
     c.apellidos,
-    o.nombre   AS organizacion_politica,
+    o.nombre AS organizacion_politica,
     o.siglas,
-    d.nombre   AS dignidad,
-    ca.nombre  AS canton,
-    p.nombre   AS provincia
+    d.nombre AS dignidad,
+    can.nombre AS canton,
+    p.nombre AS provincia
 FROM candidatos c
-JOIN organizaciones_politicas o ON o.id_organizacion = c.id_organizacion
-JOIN dignidades d               ON d.id_dignidad     = c.id_dignidad
-JOIN cantones ca                ON ca.id_canton      = c.id_canton
-JOIN provincias p               ON p.id_provincia    = ca.id_provincia;
-
--- Prueba:
--- SELECT * FROM vw_candidatos;
+         INNER JOIN organizaciones o ON c.id_organizacion = o.id_organizacion
+         INNER JOIN dignidades d ON c.id_dignidad = d.id_dignidad
+         INNER JOIN cantones can ON c.id_canton = can.id_canton
+         INNER JOIN provincias p ON can.id_provincia = p.id_provincia;

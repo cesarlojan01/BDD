@@ -1,14 +1,10 @@
 CREATE OR REPLACE VIEW vw_resultados_consolidados AS
+
+CREATE VIEW Vw_resultados_canton AS
 SELECT
-    d.nombre              AS dignidad,
-    p.nombre              AS provincia,
-    ca.nombre             AS canton,
+    can.nombre AS canton,
     COUNT(c.id_candidato) AS total_candidatos,
-    COALESCE(SUM(r.votos), 0) AS total_votos,
-    MAX(r.votos)          AS votacion_maxima
-FROM candidatos c
-JOIN dignidades d    ON d.id_dignidad   = c.id_dignidad
-JOIN cantones ca     ON ca.id_canton    = c.id_canton
-JOIN provincias p    ON p.id_provincia  = ca.id_provincia
-LEFT JOIN resultados r ON r.id_candidato = c.id_candidato
-GROUP BY d.nombre, p.nombre, ca.nombre;
+    IFNULL(SUM(c.votos), 0) AS total_votos
+FROM cantones can
+         LEFT JOIN candidatos c ON can.id_canton = c.id_canton
+GROUP BY can.id_canton, can.nombre;
